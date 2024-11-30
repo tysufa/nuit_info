@@ -1,3 +1,7 @@
+<?php
+  echo "hello wolrd";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +17,6 @@ body {font-family: "Lato", sans-serif}
 </style>
 </head>
 <body>
-  <?php
-    echo "hello wolrd";
-  ?>
 
 <!-- Navbar -->
 <div class="w3-top">
