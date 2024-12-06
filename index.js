@@ -13,7 +13,6 @@ function affichageLettre(image1, lettre, timbre){
       zoomed_on_baleine = true;
       lettre.classList.toggle('anim');
       timbre.classList.toggle('anim');
-      timbre.style.display = "";
       lettre.style.display = "";
     }
   })
@@ -42,3 +41,14 @@ let lettreBiome = document.querySelector("#lettreBiome");
 let timbreBiome = document.querySelector("#timbreBiome");
 
 affichageLettre(biome, lettreBiome, timbreBiome);
+
+cassette = document.querySelector("#Icassette");
+cassette.addEventListener('click', () =>{
+  document.getElementById("podcast1").play();
+})
+
+cassette2 = document.querySelector("#Icassette2");
+cassette2.addEventListener('click', () =>{
+  console.log("test");
+  document.getElementById("podcast2").play();
+})

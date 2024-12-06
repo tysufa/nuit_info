@@ -33,6 +33,21 @@ body {
 /*  left: 173%;*/
 /*}*/
 
+#Icassette{
+  cursor: pointer;
+  position: absolute;
+  width: 15%;
+  top: 330%;
+}
+
+#Icassette2{
+  cursor: pointer;
+  position: absolute;
+  width: 15%;
+  left: 60%;
+  top: 380%;
+}
+
 #Ibubble{
   position: absolute;
   top: 130%;
