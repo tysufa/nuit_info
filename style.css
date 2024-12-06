@@ -1,0 +1,184 @@
+:root{
+  --height: 5200px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+  background-image: url('Archive/Grand\ fond.png');
+  /*background-size: 100%;*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #166991;
+  height: 5200px;
+}
+
+/*.godrays{*/
+/*  position: absolute;*/
+/*  top: 100%;*/
+/*  left: 20%;*/
+/*  cursor: pointer;*/
+/*}*/
+/**/
+/*#lettreGodrays{*/
+/*  position: absolute;*/
+/*}*/
+/**/
+/*#timbreGodrays{*/
+/*  position: absolute;*/
+/*  width: 20%;*/
+/*  top: 40px;*/
+/*  left: 173%;*/
+/*}*/
+
+#Ibubble{
+  position: absolute;
+  top: 130%;
+  left: 60%;
+}
+
+#Ibiome{
+  cursor: pointer;
+}
+
+.biome{
+  position: absolute;
+  top: 307%;
+  left: 67%;
+}
+
+#lettreBiome{
+  position: absolute;
+  left: -90%;
+  top: 20%;
+}
+
+#timbreBiome{
+  position: absolute;
+  width: 20%;
+  top: 120px;
+  left: -16%;
+}
+
+
+#Ialgue{
+  cursor: pointer;
+}
+
+.algue{
+  position: absolute;
+
+  top: 200%;
+  left: 20%;
+}
+
+#lettreAlgue{
+  position: absolute;
+  top: 30%;
+}
+
+#timbreAlgue{
+  position: absolute;
+  width: 20%;
+  top: 31%;
+  left: 173%;
+}
+
+
+#Ibaleine{
+  cursor: pointer;
+}
+
+.baleine{
+  position: absolute;
+  top: 200%;
+}
+
+#lettreBaleine{
+  position: relative;
+}
+
+#timbreBaleine{
+  position: absolute;
+  width: 12%;
+  top: 50px;
+  left: 86%;
+}
+
+.dechet{
+  position: absolute;
+  top: 450%;
+}
+
+#Idechet{
+  cursor: pointer;
+}
+
+#lettreDechet{
+  position: relative;
+}
+
+#timbreDechet{
+  position: absolute;
+  width: 12%;
+  top: 50px;
+  left: 86%;
+}
+
+.header{
+  grid-area: header;
+}
+
+.anim{
+  animation: popup-animation 0.5s ease-in-out;
+}
+img{
+  max-width: 100%;
+    height: auto;
+}
+@keyframes popup-animation {
+  0% {
+    opacity: 0;
+    /*transform: translate(-50%, -50%) scale(0.5);*/
+  }
+  100% {
+    opacity: 1;
+    /*transform: translate(-50%, -50%) scale(1);*/
+  }
+}
+
+.main{
+  grid-area: main;
+}
+
+.right{
+  grid-area: right;
+}
+
+
+.grid{
+  display:grid;
+  height: var(--height);
+  grid-template-areas:
+    'header header header'
+    'left1 left1 right'
+    'left2 main2 right'
+    'left main right'
+    'left main right'
+    'left main right'
+    'left main right';
+  gap: 0px;
+  padding: 0px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid > div {
+  /*background-color: rgba(255, 255, 255, 0.1);*/
+  text-align: center;
+  font-size: 30px;
+}
