@@ -25,8 +25,8 @@
 }
 
 .player {
-    width: 160px;
-    height: 86px;
+    width: 200px;
+    height: 70px;
     /* border: 1px solid blue; */
     position: absolute;
     bottom: 0;
@@ -38,7 +38,7 @@
 
 .player.jump {
     animation: jump 1.5s infinite;
-    background-image: url('./assets/dino.png');
+    background-image: url('./assets/dino.gif');
 }
 
 @keyframes jump {
@@ -70,10 +70,10 @@
     background-size: contain;
 }
 
-.obstacle-xs { width: 30px; height: 70px; }
-.obstacle-s { width: 60px; height: 80px; }
-.obstacle-m { width: 90px; height: 90px; }
-.obstacle-l { width: 120px; height: 120px; }
+.obstacle-xs { width: 28px; height: 30px; }
+.obstacle-s { width: 56px; height: 60px; }
+.obstacle-m { width: 84px; height: 90px; }
+.obstacle-l { width: 112; height: 120px; }
 
 @keyframes move {
     0% {

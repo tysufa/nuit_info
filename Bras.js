@@ -63,10 +63,12 @@ let handleForm = function(){
             document.getElementById("errorlog").style.display="None";
             document.getElementById("return").style.display="None";
             document.getElementById("form").style.display="";
-            document.getElementById("Nom").value="veuillez, et ce sans vouloir vous contraindre, entrer votre no"
+            let text=""
+            text="veuillez, et ce sans vouloir vous contraindre, entrer votre no"
             for (let index = 0; index < 100; index++) {
-               document.getElementById("Nom").value+="                                        "
+               text+="                                        "
             }
+            document.getElementById("Nom").value=text;
             document.getElementById("Action").value="Action"
             document.getElementById("select1").value=""
             document.getElementById("select2").value=""

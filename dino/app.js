@@ -123,7 +123,7 @@ function restart() {
     console.log(score)
     if(score<300)
     location.reload();
-    else document.location.href = "../index.html?captcha=solved";
+    else document.location.href = "../Bras.html";
 }
 
 function main() {
